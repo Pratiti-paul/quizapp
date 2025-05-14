@@ -1,0 +1,8 @@
+.intro{
+    display: flex;
+    /* padding-top: 5px; */
+    padding-left: 50px;
+    font-size: 80px;
+    font-family: Georgia;
+    color: #385b4a;
+}
