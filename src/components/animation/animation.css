@@ -1,0 +1,15 @@
+.animated-text-container {
+  display: flex;
+  font-size: 100px;
+  font-family: Georgia;
+  color: #4b6d5d;
+  padding-left: 50px;
+}
+
+.animated-letter {
+  display: inline-block;
+  margin-right: 0.2rem;
+  transition: transform 0.2s ease;
+}
+
+
