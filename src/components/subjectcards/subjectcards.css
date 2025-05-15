@@ -25,9 +25,9 @@
   justify-content: center;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.05);
-}
+} */
 
 .card h3{
     color: #3f1919;
@@ -51,4 +51,5 @@
 
 .start-button:hover {
   background-color: #4338ca;
+  transform: scale(1.05);
 }
