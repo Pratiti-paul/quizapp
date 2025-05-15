@@ -6,4 +6,24 @@ body{
   overflow-x: hidden;
 }
 
-.Animated
+.section-divider {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.section-divider h2 {
+  font-size: 80px;
+  font-family: Georgia;
+  margin-bottom: 0.5rem;
+  color: #265c4c;
+}
+
+.section-divider .line {
+  height: 3px;
+  width: 800px;
+  background-color: #4f46e5; 
+  margin: 0 auto;
+  border-radius: 2px;
+}

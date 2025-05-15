@@ -16,14 +16,10 @@
   color: #4A4A4A;
 }
 
-.header-login-button {
-  width: 70px;
-  height: 70px;
-  background-color: #E27D60; 
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 50%;
-
+.login-icon {
+  font-size: 60px;
 }
 
+.login-icon:hover {
+  color: #4A4A4A;
+}

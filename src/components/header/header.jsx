@@ -1,4 +1,5 @@
 import React from "react";
+import { MdAccountCircle } from "react-icons/md";
 import "./header.css"; 
 
 const Header = ({ user, onLoginClick }) => {
@@ -12,12 +13,9 @@ const Header = ({ user, onLoginClick }) => {
             <div className="header-logo">
                 <span>QuizCraft</span>
             </div>
-            {/* <div className="header-greeting">
-                Hello{user ? `, ${user.name}` : ""}
-            </div> */}
-            <button className="header-login-button" onClick={onLoginClick}>
-                {getInitial()}
-            </button>
+            <div className="login-icon">
+            <MdAccountCircle />
+            </div>
         </div>
     );
 };
