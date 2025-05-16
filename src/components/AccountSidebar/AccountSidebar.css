@@ -1,0 +1,123 @@
+body {
+  font-family: Georgia;
+  margin: 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -80%; /* Changed from fixed pixel value */
+  height: 100vh;  
+  width: 80%; /* Changed from fixed pixel value */
+  max-width: 500px; /* Maximum width for larger screens */
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.3);
+  transition: right 0.3s ease;
+  z-index: 1002;
+  padding: 20px;
+  background-color: #f29d86;
+  font-size: clamp(24px, 5vw, 40px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* This spaces content evenly */
+  overflow-y: auto;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar h2 {
+  margin-top: 0;
+}
+
+.sidebar-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar ul li {
+  margin: 15px 0;
+}
+
+.sidebar ul li button {
+  background: none;
+  border: none;
+  font-size: clamp(18px, 4vw, 30px);
+  font-family: Georgia;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  color: #4A4A4A;
+}
+
+.sidebar ul li button:hover {
+  background-color: #f7b6a4;
+  border-radius: 5px;
+}
+
+.sidebar-logout {
+  margin-top: auto; /* Push to bottom */
+  width: 100%;
+}
+
+.sidebar-logout button {
+  width: 100%;
+  padding: 15px 10px;
+  font-size: clamp(18px, 4vw, 30px);
+  background-color: #e74c3c; 
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sidebar-logout button:hover {
+  background-color: #c0392b;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+  .sidebar {
+    padding: 15px;
+  }
+  
+  .sidebar-logout button {
+    padding: 12px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    padding: 10px;
+  }
+  
+  .sidebar ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar-logout button {
+    padding: 10px;
+  }
+}
+

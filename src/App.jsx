@@ -1,9 +1,12 @@
-import React from 'react'
+
+import React, { useState } from 'react';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header/header'
 import Intro from './components/intro/intro'
 import AnimatedText from './components/animation/animation' 
 import SubjectCards from './components/subjectcards/subjectcards'
+import AccountSidebar from './components/AccountSidebar/AccountSidebar'
 
 import DSAQuiz from './components/quizpages/DSAQuiz';
 import Maths1Quiz from './components/quizpages/Maths1Quiz';
@@ -12,13 +15,25 @@ import Maths2Quiz from './components/quizpages/Maths2Quiz';
 import './App.css'
 
 function App() {
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  const handleLoginClick = () => {
+    setSidebarOpen(true);
+  };
+
+  const handleCloseSidebar = () => {
+    setSidebarOpen(false);
+  };
 
 
   return (
     <Router>
-      <Header />
+      <Header onLoginClick={handleLoginClick} />
+      <AccountSidebar isOpen={sidebarOpen} onClose={handleCloseSidebar} />
+
       <Intro />
       <AnimatedText text="What do you want to improve today?" />
+
       <div className="section-divider">
         <h2>Choose a Subject</h2>
         <div className="line"></div>
@@ -34,8 +49,8 @@ function App() {
         </Routes>
       </main>
     </Router>
-
-  )
+  );
 }
+
 
 export default App

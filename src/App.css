@@ -1,4 +1,4 @@
-body{
+body {
   background: linear-gradient(to right, #fffaf0, #fdf6e3, #f8f1d9);
   width: 100%;
   margin: 0;
@@ -11,19 +11,39 @@ body{
   flex-direction: column;
   text-align: center;
   margin-top: 2rem;
+  padding: 0 1rem;
 }
 
 .section-divider h2 {
-  font-size: 80px;
+  font-size: clamp(2rem, 8vw, 5rem); /* 32px to 80px responsive */
   font-family: Georgia;
   margin-bottom: 0.5rem;
   color: #265c4c;
+  line-height: 1.2;
 }
 
 .section-divider .line {
   height: 3px;
-  width: 800px;
+  width: 90%; /* Changed from fixed width */
+  max-width: 800px;
   background-color: #4f46e5; 
   margin: 0 auto;
   border-radius: 2px;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+  .section-divider {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-divider {
+    margin-top: 1rem;
+  }
+  
+  .section-divider .line {
+    height: 2px;
+  }
 }

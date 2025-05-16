@@ -1,8 +1,27 @@
-.intro{
+.intro {
     display: flex;
-    /* padding-top: 5px; */
-    padding-left: 50px;
-    font-size: 80px;
+    padding-left: clamp(20px, 5vw, 50px);
+    font-size: clamp(32px, 8vw, 80px);
     font-family: Georgia;
     color: #385b4a;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+    .intro {
+        padding-left: clamp(15px, 4vw, 30px);
+        padding-right: clamp(15px, 4vw, 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .intro {
+        padding: 10px 15px;
+        text-align: center;
+        justify-content: center;
+    }
 }

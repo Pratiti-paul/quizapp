@@ -4,22 +4,43 @@
   align-items: center;
   font-family: Georgia;
   background-color: #f8a690;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: clamp(10px, 2vw, 20px) clamp(15px, 5vw, 50px);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .header-logo {
-  font-size: 50px;
+  font-size: clamp(30px, 5vw, 50px);
   font-weight: bold;
   color: #4A4A4A;
 }
 
 .login-icon {
-  font-size: 60px;
+  font-size: clamp(40px, 6vw, 60px);
+  cursor: pointer;
 }
 
 .login-icon:hover {
   color: #4A4A4A;
+}
+
+/* Media queries for different screen sizes */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px clamp(10px, 4vw, 30px);
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 15px;
+  }
+  
+  .header-logo {
+    font-size: clamp(24px, 6vw, 30px);
+  }
+  
+  .login-icon {
+    font-size: clamp(30px, 8vw, 40px);
+  }
 }
