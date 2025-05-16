@@ -1,42 +1,39 @@
 .animated-text-container {
-  display: flex;
-  font-size: clamp(40px, 8vw, 100px); /* Responsive font size */
-  font-family: Georgia;
-  color: #4b6d5d;
-  padding-left: clamp(15px, 5vw, 50px); /* Responsive padding */
-  flex-wrap: wrap; /* Allow text to wrap on small screens */
-  width: 100%;
-  box-sizing: border-box;
+    display: flex;
+    font-size: clamp(50px, 8vw, 130px);
+    font-family: Georgia;
+    color: #4b6d5d;
+    padding-left: clamp(15px, 5vw, 50px);
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .animated-letter {
-  display: inline-block;
-  margin-right: 0.2rem;
-  transition: transform 0.2s ease;
+    display: inline-block;
+    margin-right: 0.2rem;
+    transition: transform 0.2s ease;
 }
 
-/* Media queries for different screen sizes */
 @media (max-width: 768px) {
-  .animated-text-container {
-    padding-right: clamp(15px, 5vw, 50px); /* Add right padding for balance */
-    justify-content: center; /* Center on medium screens */
-  }
-  
-  .animated-letter {
-    margin-right: 0.15rem; /* Slightly reduce spacing on smaller screens */
-  }
+    .animated-text-container {
+        padding-right: clamp(15px, 5vw, 50px);
+        justify-content: center;
+    }
+    
+    .animated-letter {
+        margin-right: 0.15rem;
+    }
 }
 
 @media (max-width: 480px) {
-  .animated-text-container {
-    padding: 10px 15px;
-    text-align: center;
-    justify-content: center;
-  }
-  
-  .animated-letter {
-    margin-right: 0.1rem; /* Further reduce spacing on mobile */
-  }
+    .animated-text-container {
+        padding: 10px 15px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    .animated-letter {
+        margin-right: 0.1rem;
+    }
 }
-
-

@@ -1,0 +1,43 @@
+.leaderboard-container {
+  margin: 40px auto;
+  height: 400px;
+  width: 1000px;
+  padding: 20px;
+  background-color: #FFF9F1; 
+  border: 1px solid #E0D9CC;
+  border-radius: 12px;
+  font-family: Georgia;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.leaderboard-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 40px;
+}
+
+.leaderboard-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #EEE7DA;
+  color: #4A4A4A; 
+}
+
+.leaderboard-item:first-child {
+  border-top: none;
+}
+
+.rank-badge {
+  width: 40px;
+  height: 40px;
+  background-color: #E27D60; 
+  border-radius: 50%;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  line-height: 32px;
+  margin-right: 10px;
+}

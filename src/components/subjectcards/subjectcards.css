@@ -7,7 +7,6 @@
   overflow-x: auto; 
   padding: clamp(10px, 2vw, 20px);
   scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .card {
@@ -54,7 +53,28 @@
   transform: scale(1.05);
 }
 
-/* Media queries for different screen sizes */
+.subject-progress {
+  height: 30px;
+  width: 400px;
+  margin: 10px 0 15px;
+  background-color: #e9ecef;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.subject-progress .progress-bar {
+  background-color: #4caf50; 
+  font-size: 14px;
+  font-weight: 500;
+  height: 30px;
+  width: 400px;
+  line-height: 0px;
+  color: #ffffff;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+
 @media (max-width: 768px) {
   .cards-container {
     padding: 15px;
