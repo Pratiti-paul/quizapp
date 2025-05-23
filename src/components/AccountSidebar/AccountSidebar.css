@@ -24,7 +24,7 @@ body {
   transition: right 0.3s ease;
   z-index: 1002;
   padding: 20px;
-  background-color: #f29d86;
+  background-color: #50b8f0;
   font-size: clamp(24px, 5vw, 40px);
   text-align: center;
   display: flex;
@@ -38,9 +38,9 @@ body {
 
 .sidebar-content h2 {
   font: 50px;
-    font-family: Georgia;
-    color: #4A4A4A;
-    font-weight: bold;
+  font-family: Georgia;
+  color: #003366;
+  font-weight: bold;
   margin-top: 0;
 
 }
@@ -71,26 +71,26 @@ body {
   padding: 10px;
   width: 100%;
   text-align: left;
-  color: #4A4A4A;
+  color: #003366;
 }
 
 .sidebar ul li button:hover {
-  background-color: #f7b6a4;
+  background-color: #397da2;
   border-radius: 5px;
 }
-/* 
-.sidebar-logout {
+ 
+/* .sidebar-logout {
   margin-top: auto; 
   width: 100%;
-} */
+}  */
 
 .sidebar-logout button {
   width: 100%;
   padding: 15px 10px;
   font-size: clamp(18px, 4vw, 30px);
-  background-color: #e74c3c; 
+  background-color: #094160; 
   border: none;
-  color: white;
+  color: #f1f4f6;
   cursor: pointer;
   border-radius: 4px;
   margin-bottom: 60px;
@@ -98,7 +98,7 @@ body {
 }
 
 .sidebar-logout button:hover {
-  background-color: #c0392b;
+  background-color: #1d5a7b;
 }
 
 @media (max-width: 768px) {

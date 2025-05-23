@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   font-family: Georgia;
-  background-color: #f8a690;
+  background-color: #50b8f0;
   padding: clamp(10px, 2vw, 20px) clamp(15px, 5vw, 50px);
   width: 100%;
   box-sizing: border-box;
@@ -12,7 +12,7 @@
 .header-logo {
   font-size: clamp(30px, 5vw, 50px);
   font-weight: bold;
-  color: #4A4A4A;
+  color: #003366;
 }
 
 .login-icon {

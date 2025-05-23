@@ -12,7 +12,7 @@ const Header = ({ user, onLoginClick }) => {
         <div className="header">
             <div className="header-logo">
                 <span>QuizCraft</span>
-            </div>i
+            </div>
             <div className="login-icon" onClick={onLoginClick} style={{ cursor: "pointer" }}>
                 <MdAccountCircle />
             </div>

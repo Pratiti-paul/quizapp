@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/header/header'
 import Intro from './components/intro/intro'
@@ -40,7 +39,7 @@ function App() {
         <div className="line"></div>
         <SubjectCards />
       </div>
-      <div className="section-divider">
+      <div className="section-divider2">
         <h2>Leaderboard</h2>
           <Leaderboard />
         </div>

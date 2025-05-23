@@ -3,9 +3,9 @@ import './Leaderboard.css';
 
 const leaderboardData = [
   { name: 'Pratiti Paul', score: 120 },
-  { name: 'Param Khodiyar', score: 110 },
-  { name: 'Sanchita Jain', score: 90 },
-  { name: 'Ridhima Doshi', score: 80 },
+  { name: 'Pratiti Paul', score: 110 },
+  { name: 'Pratiti Paul', score: 90 },
+  { name: 'Pratiti Paul', score: 80 },
 ];
 
 const Leaderboard = () => {
