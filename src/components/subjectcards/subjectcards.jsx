@@ -1,7 +1,7 @@
 import React from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
 import { useNavigate } from 'react-router-dom'; 
-import './subjectCards.css'; 
+import './subjectcards.css'; 
 
 const subjects = [
   { name: 'DSA', route: 'dsa', progress: 60 },
