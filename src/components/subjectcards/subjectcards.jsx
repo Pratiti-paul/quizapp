@@ -1,6 +1,7 @@
 import React from 'react';
 import ProgressBar from 'react-bootstrap/ProgressBar';
-import './subjectcards.css';
+import { useNavigate } from 'react-router-dom'; 
+import './SubjectCards.css'; 
 
 const subjects = [
   { name: 'DSA', route: 'dsa', progress: 60 },
@@ -10,8 +11,10 @@ const subjects = [
 ];
 
 function SubjectCards() {
+  const navigate = useNavigate(); 
+
   const handleClick = (route) => {
-    window.open(`/quiz/${route}`, '_blank');
+    navigate(`/quiz/${route}`); 
   };
 
   return (
